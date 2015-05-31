@@ -39,10 +39,6 @@ import tempfile
 
 c = sys.argv[0]
 
-def usage():
-    print(__doc__)
-    sys.exit(1)
-
 def on_error(e, x=1):
     if not e is None:
         print('%s: %s' % (c, e), file=sys.stderr)
